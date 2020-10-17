@@ -1,13 +1,7 @@
 package palindrome_number;
 
 public class PalindromeNumber {
-    public static void main(String[] args) {
-        int input = 0;
-        boolean output = isPalindrome(input);
-        System.out.println(output);
-    }
-
-    private static boolean isPalindrome(int x) {
+    public boolean isPalindrome(int x) {
         if (x < 0) {
             return false;
         }
@@ -15,7 +9,7 @@ public class PalindromeNumber {
         return x == reversed;
     }
 
-    private static int reverse(int x) {
+    private int reverse(int x) {
         long output = 0;
         int currentDigit;
         while (x != 0) {

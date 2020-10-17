@@ -1,13 +1,7 @@
 package reverse_number;
 
 public class ReverseInteger {
-    public static void main(String[] args) {
-        int input = -123;
-        int output = reverse(input);
-        System.out.println(output);
-    }
-
-    private static int reverse(int x) {
+    public int reverse(int x) {
         long output = 0;
         int currentDigit;
         while (x != 0) {
