@@ -11,7 +11,7 @@ public class TwoSum {
         int[] result1 = twoSum1(nums, target);
         System.out.println(Arrays.toString(result1));
 
-        System.out.println("Attempt 1:");
+        System.out.println("Attempt 2:");
         int[] result2 = twoSum2(nums, target);
         System.out.println(Arrays.toString(result2));
     }
@@ -20,7 +20,7 @@ public class TwoSum {
     private static int[] twoSum1(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
-                if (target - nums[j] == nums[i]) {
+                if (nums[i] + nums[j] == target) {
                     return new int[]{i, j};
                 }
             }
