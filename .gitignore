@@ -1,5 +1,6 @@
 # Compiled class file
 *.class
+build
 
 # Log file
 *.log
@@ -24,4 +25,6 @@ hs_err_pid*
 
 # IDE
 .idea
-leetcode-problems.iml
+
+# gradle
+.gradle

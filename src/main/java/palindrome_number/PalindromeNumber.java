@@ -1,8 +1,18 @@
-public class ReverseInteger {
+package palindrome_number;
+
+public class PalindromeNumber {
     public static void main(String[] args) {
-        int input = -123;
-        int output = reverse(input);
+        int input = 0;
+        boolean output = isPalindrome(input);
         System.out.println(output);
+    }
+
+    private static boolean isPalindrome(int x) {
+        if (x < 0) {
+            return false;
+        }
+        int reversed = reverse(x);
+        return x == reversed;
     }
 
     private static int reverse(int x) {

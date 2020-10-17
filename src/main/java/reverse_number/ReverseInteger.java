@@ -1,16 +1,10 @@
-public class PalindromeNumber {
-    public static void main(String[] args) {
-        int input = 0;
-        boolean output = isPalindrome(input);
-        System.out.println(output);
-    }
+package reverse_number;
 
-    private static boolean isPalindrome(int x) {
-        if (x < 0) {
-            return false;
-        }
-        int reversed = reverse(x);
-        return x == reversed;
+public class ReverseInteger {
+    public static void main(String[] args) {
+        int input = -123;
+        int output = reverse(input);
+        System.out.println(output);
     }
 
     private static int reverse(int x) {
