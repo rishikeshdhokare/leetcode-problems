@@ -16,7 +16,7 @@ public class TwoSum {
         System.out.println(Arrays.toString(result2));
     }
 
-    // Attempt 1: O(n2)
+    // Approach 1: O(n2)
     private static int[] twoSum1(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
@@ -28,7 +28,7 @@ public class TwoSum {
         return new int[]{};
     }
 
-    // Attempt 2: O(n)
+    // Approach 2: O(n)
     private static int[] twoSum2(int[] nums, int target) {
         Map<Integer, Integer> numsMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
