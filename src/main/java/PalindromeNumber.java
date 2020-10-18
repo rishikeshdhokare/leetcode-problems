@@ -1,7 +1,13 @@
-package reverse_number;
+public class PalindromeNumber {
+    public boolean isPalindrome(int x) {
+        if (x < 0) {
+            return false;
+        }
+        int reversed = reverse(x);
+        return x == reversed;
+    }
 
-public class ReverseInteger {
-    public int reverse(int x) {
+    private int reverse(int x) {
         long output = 0;
         int currentDigit;
         while (x != 0) {
