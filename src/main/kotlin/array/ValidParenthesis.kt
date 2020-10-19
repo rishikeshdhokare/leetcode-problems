@@ -11,7 +11,7 @@ class ValidParenthesis {
         if (s.length == 1) return false
         val arr = CharArray(s.length)
         var ptr = 0
-        s.forEach {
+        for (it in s) {
             when (it) {
                 '[', '(', '{' -> arr[ptr++] = it
                 else -> if (ptr == 0 || getOpeningBracket(it) != arr[--ptr]) return false
