@@ -17,7 +17,7 @@ class ValidParenthesis {
                 else -> if (ptr == 0 || getOpeningBracket(it) != arr[--ptr]) return false
             }
         }
-        return ptr==0
+        return ptr == 0
     }
 
     private fun getOpeningBracket(c: Char): Char {
