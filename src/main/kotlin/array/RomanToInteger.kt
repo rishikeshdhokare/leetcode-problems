@@ -20,7 +20,7 @@ class RomanToInteger {
             curr = getInt(s[i])
             prev = getInt(s[i - 1])
             if (prev < curr) {
-                sum = sum - prev + getInt(s.substring(i-1, i+1))
+                sum = sum - prev + getInt(s[i-1].toString() + s[i].toString())
             } else {
                 sum += curr
             }
