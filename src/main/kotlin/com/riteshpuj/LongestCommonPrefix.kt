@@ -1,4 +1,4 @@
-package array
+package com.riteshpuj
 
 class LongestCommonPrefix {
     fun longestCommonPrefix(strs: Array<String>): String {

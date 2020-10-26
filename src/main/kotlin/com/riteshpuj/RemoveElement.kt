@@ -1,4 +1,4 @@
-package array
+package com.riteshpuj
 
 class RemoveElement {
     fun removeElement(nums: IntArray, `val`: Int): Int {

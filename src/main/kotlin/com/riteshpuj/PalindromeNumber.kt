@@ -1,4 +1,4 @@
-package array
+package com.riteshpuj
 
 class PalindromeNumber {
     fun isPalindrome(x: Int): Boolean {

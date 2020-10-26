@@ -1,4 +1,4 @@
-package array
+package com.riteshpuj
 
 @Suppress("unused")
 class ImplementStrStr {

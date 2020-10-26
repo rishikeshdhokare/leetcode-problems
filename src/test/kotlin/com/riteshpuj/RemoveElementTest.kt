@@ -1,6 +1,6 @@
-package array
+package com.riteshpuj
 
-import array.RemoveElement
+import com.riteshpuj.RemoveElement
 import org.junit.jupiter.api.Test
 
 class RemoveElementTest {

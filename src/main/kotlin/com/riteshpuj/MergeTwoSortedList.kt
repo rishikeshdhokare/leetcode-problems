@@ -1,4 +1,4 @@
-package array
+package com.riteshpuj
 
 class ListNode(var `val`: Int) {
     var next: ListNode? = null
@@ -64,7 +64,7 @@ class MergeTwoSortedList {
     fun mergeTwoListOptimal(l1: ListNode?, l2: ListNode?): ListNode? {
         if(l1 == null) return l2
         if(l2 == null) return l1
-        var head = ListNode(-1)
+        val head = ListNode(-1)
         var first = l1
         var second = l2
         var tail = head

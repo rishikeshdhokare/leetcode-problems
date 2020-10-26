@@ -1,4 +1,4 @@
-package array
+package com.riteshpuj
 
 class ReverseInteger {
     fun reverse(x: Int): Int {

@@ -1,6 +1,6 @@
-package array
+package com.riteshpuj
 
-import array.ImplementStrStr
+import com.riteshpuj.ImplementStrStr
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

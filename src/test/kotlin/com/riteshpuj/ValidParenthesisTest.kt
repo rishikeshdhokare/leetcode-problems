@@ -1,4 +1,4 @@
-package array
+package com.riteshpuj
 
 
 import org.assertj.core.api.Assertions

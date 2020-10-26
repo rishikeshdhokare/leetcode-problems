@@ -1,6 +1,6 @@
-package array
+package com.riteshpuj
 
-import array.RemoveDuplicatesfromSortedArray
+import com.riteshpuj.RemoveDuplicatesfromSortedArray
 import org.junit.jupiter.api.Test
 
 class RemoveDuplicatesfromSortedArrayTest {
