@@ -1,5 +1,6 @@
-package com.riteshpuj
+package com.riteshpuj.primitives
 
+import com.riteshpuj.primitives.ReverseInteger
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 

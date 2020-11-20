@@ -8,11 +8,11 @@ class ImplementStrStrTest {
     @Test
     fun `should find a str within a str`() {
         val o = ImplementStrStr()
-        assertEquals(4, o.strStr("aabaaabaaac", "aabaaac"))
-        assertEquals(4, o.strStr("mississippi", "issip"))
-        assertEquals(8, o.strStr("This is a haystack", "a "))
-        assertEquals(2, o.strStr("This is a haystack", "i"))
-        assertEquals(0, o.strStr("mississippi", ""))
-        assertEquals(-1, o.strStr("mississippi", "missD"))
+        assertEquals(4, o.str22("aabaaabaaac", "aabaaac"))
+        assertEquals(4, o.str22("mississippi", "issip"))
+        assertEquals(8, o.str22("This is a haystack", "a "))
+        assertEquals(2, o.str22("This is a haystack", "i"))
+        assertEquals(0, o.str22("mississippi", ""))
+        assertEquals(-1, o.str22("mississippi", "missD"))
     }
 }

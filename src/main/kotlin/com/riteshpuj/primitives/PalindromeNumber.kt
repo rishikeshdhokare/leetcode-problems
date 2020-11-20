@@ -1,4 +1,4 @@
-package com.riteshpuj
+package com.riteshpuj.primitives
 
 class PalindromeNumber {
     fun isPalindrome(x: Int): Boolean {

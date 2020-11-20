@@ -19,7 +19,8 @@ class ImplementStrStr {
                     j = 0 // because a negative i is not a valid array position
                     i++
                 } else {
-                    j = longestSubstringPrefix[j - 1] // because longestSubstringPrefix[j - 1] tells us if the pattern contains a prefix that mathes the suffix
+                    j =
+                        longestSubstringPrefix[j - 1] // because longestSubstringPrefix[j - 1] tells us if the pattern contains a prefix that mathes the suffix
                 }
             } else {
                 j++
@@ -38,7 +39,8 @@ class ImplementStrStr {
 
         while (j < needle.length) {
             if (needle[i] == needle[j]) {
-                longestSubstringPrefix[j] = i + 1 // this means that array until jth position has a prefix of length i+1 that matches a suffix
+                longestSubstringPrefix[j] =
+                    i + 1 // this means that array until jth position has a prefix of length i+1 that matches a suffix
                 i++
                 j++
             } else {
@@ -70,5 +72,50 @@ class ImplementStrStr {
             }
         }
         return -1
+    }
+
+    fun buildlps(needle: String): IntArray {
+        val lps = IntArray(needle.length)
+        var I = 0
+        var J = 1
+        lps[0] = 0 //because there is no prefix that is also suffix until this point
+
+        while (J < needle.length) {
+            if (needle[I] == needle[J]) {
+                // because we want to skip our comparions until ith character in the pattern string as that
+                // part is already matched by the suffix we found later in the pattern
+                lps[J] = I + 1
+                J++
+                I++
+            } else {
+                if (I != 0)
+                    I = lps[I - 1] //weird rule
+                else
+                //because i is at the start of the array and cannot be moved further back and
+                //and there is no match of the ith and jth characters
+                    lps[J++] = 0
+            }
+        }
+        return lps
+    }
+
+    fun str22(haystack: String, needle: String): Int {
+        if(needle.isEmpty()) return 0
+        var I = 0
+        var J = 0
+        val lps = buildlps(needle)
+        println(lps.contentToString())
+        while (I < haystack.length && J < needle.length) {
+            if (haystack[I] == needle[J]) {
+                I++
+                J++
+            } else {
+                if (J != 0)
+                    J = lps[J - 1]
+                else
+                    I++
+            }
+        }
+        return if (J == needle.length) I - needle.length else -1
     }
 }

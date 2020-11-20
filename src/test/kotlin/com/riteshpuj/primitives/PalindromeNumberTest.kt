@@ -1,6 +1,6 @@
-package com.riteshpuj
+package com.riteshpuj.primitives
 
-import com.riteshpuj.PalindromeNumber
+import com.riteshpuj.primitives.PalindromeNumber
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 
